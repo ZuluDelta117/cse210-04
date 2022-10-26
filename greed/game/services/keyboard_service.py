@@ -1,4 +1,4 @@
-# Coppied from jfk
+# Coppied from rfk
 
 import pyray
 from game.shared.point import Point
