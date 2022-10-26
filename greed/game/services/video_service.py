@@ -1,6 +1,6 @@
 import pyray
 
-# Coppied from jfk
+# Coppied from rfk
 # No changes needed (Zack D.)
 
 class VideoService:
