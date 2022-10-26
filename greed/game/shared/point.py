@@ -1,4 +1,4 @@
-# Copied from jfk
+# Copied from rfk
 # No changes needed
 
 class Point:
