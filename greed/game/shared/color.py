@@ -1,3 +1,7 @@
+
+# Copied from jfk
+# No changes needed (Zack D.)
+
 class Color:
     """A color.
 
