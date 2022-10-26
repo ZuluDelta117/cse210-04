@@ -1,3 +1,6 @@
+# Copied from rfk
+# No changes needed (Zack D.)
+
 class Cast:
     """A collection of actors.
 
