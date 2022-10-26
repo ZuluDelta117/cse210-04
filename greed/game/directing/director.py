@@ -1,3 +1,5 @@
+# Copied from jfk
+
 class Director:
     """A person who directs the game. 
     
@@ -58,8 +60,16 @@ class Director:
         
         for artifact in artifacts:
             if robot.get_position().equals(artifact.get_position()):
-                message = artifact.get_message()
-                banner.set_text(message)    
+                # Differentiate between rocks and gems to add or subtract points (Zack D.)
+                if artifact.get_text() == '*':
+                    self._total = self._total + 1
+                    cast.remove_actor('artifacts', artifact)
+                    
+                else:
+                    self._total = self._total - 1
+                    cast.remove_actor('artifacts', artifact)
+                    
+            artifact.move_next(max_x, max_y)   
         
     def _do_outputs(self, cast):
         """Draws the actors on the screen.
