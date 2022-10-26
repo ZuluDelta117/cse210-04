@@ -1,6 +1,8 @@
 from game.shared.color import Color
 from game.shared.point import Point
 
+# Copied from the rfk game earlier this week
+# No changes should need to be made to this file. (Zack D.)
 
 class Actor:
     """A visible, moveable thing that participates in the game. 
