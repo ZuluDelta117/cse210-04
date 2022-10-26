@@ -1,4 +1,4 @@
-# Copied from jfk
+# Copied from rfk
 
 class Director:
     """A person who directs the game. 
