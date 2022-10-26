@@ -1,5 +1,5 @@
 
-# Copied from jfk
+# Copied from rfk
 # No changes needed (Zack D.)
 
 class Color:
