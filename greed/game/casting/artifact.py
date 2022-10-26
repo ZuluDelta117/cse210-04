@@ -1,5 +1,12 @@
 from game.casting.actor import Actor
 
+# coppied from the rfk assignment earlier this week
+# No chnages needed (Zack D.)
+
+# I do not think this classes is needed, but due to other files calling the parent funciton through the child function it cannot be removed. 
+# We also are required to have 8 classes for this assignment and this class helps us complete that requirment. (Zack D.)
+
+# I think we can add something to the code that will use this class to congragulate the player when they get a gem and to tell them they suck if they get a rock (Zack D.)
 
 class Artifact(Actor):
     """
