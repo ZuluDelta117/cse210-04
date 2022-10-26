@@ -1,5 +1,5 @@
-# Robot Finds Kitten
-Simon Carless once described robotfindskitten as "less a game and more a way of life ... It's fun to wander around until you find a kitten, at which point you feel happy and can start again". I don't think I could have said it better myself!
+# Greed
+Move around the bottom of the screen to try and collect the gems (*) and avoid the rocks (o) if you catch a gem you earn one point, but if you get it by a rock you lose a point. Be careful you can go into the negative. You will be playing in zen mode. Continue playing until you close the game.
 
 ## Getting Started
 ---
@@ -19,7 +19,7 @@ project folder. Select the main module inside the hunter folder and click the "r
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
-+-- rfk                 (source code for game)
++-- greed               (source code for game)
   +-- data              (data files for game)
   +-- game              (specific game classes)
   +-- __main__.py       (entry point for program)
@@ -33,4 +33,4 @@ root                    (project root folder)
 
 ## Authors
 ---
-* # TODO: Add your name and email here
+* Zack Doxey (zack13@byui.edu)
