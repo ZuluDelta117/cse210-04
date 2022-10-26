@@ -19,6 +19,8 @@ class Director:
         """
         self._keyboard_service = keyboard_service
         self._video_service = video_service
+        # The starting score (Zack D.)
+        self._total = 0
         
     def start_game(self, cast):
         """Starts the game using the given cast. Runs the main game loop.
@@ -53,7 +55,8 @@ class Director:
         robot = cast.get_first_actor("robots")
         artifacts = cast.get_actors("artifacts")
 
-        banner.set_text("")
+        # Display the score instead of the message (Zack D.)
+        banner.set_text(f'Score: {self._total}')
         max_x = self._video_service.get_width()
         max_y = self._video_service.get_height()
         robot.move_next(max_x, max_y)
