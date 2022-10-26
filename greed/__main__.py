@@ -21,8 +21,8 @@ CELL_SIZE = 15
 FONT_SIZE = 15
 COLS = 60
 ROWS = 40
-CAPTION = "Robot Finds Kitten"
-DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
+CAPTION = "Greed"
+# DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt" # Not needed (Zack D.)
 WHITE = Color(255, 255, 255)
 DEFAULT_ARTIFACTS = 40
 
@@ -40,7 +40,9 @@ def main():
     banner.set_position(Point(CELL_SIZE, 0))
     cast.add_actor("banners", banner)
     
-    # create the robot
+    
+    # We will also need to make changes here so the player starts at the bottom of the screen
+    # create the player
     x = int(MAX_X / 2)
     y = int(MAX_Y / 2)
     position = Point(x, y)
@@ -52,7 +54,7 @@ def main():
     robot.set_position(position)
     cast.add_actor("robots", robot)
     
-    # create the artifacts
+    # create the gems and rocks
 
     # We will need to change things here to get the gems to move and make them look the way we want (Zack D.)
     for n in range(DEFAULT_ARTIFACTS):
