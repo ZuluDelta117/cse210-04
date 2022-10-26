@@ -53,10 +53,8 @@ def main():
     cast.add_actor("robots", robot)
     
     # create the artifacts
-    with open(DATA_PATH) as file:
-        data = file.read()
-        messages = data.splitlines()
 
+    # We will need to change things here to get the gems to move and make them look the way we want (Zack D.)
     for n in range(DEFAULT_ARTIFACTS):
         text = chr(random.randint(33, 126))
         message = messages[n]
