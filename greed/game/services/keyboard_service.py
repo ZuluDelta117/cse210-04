@@ -1,3 +1,5 @@
+# Coppied from jfk
+
 import pyray
 from game.shared.point import Point
 
@@ -26,8 +28,9 @@ class KeyboardService:
         Returns:
             Point: The selected direction.
         """
+        # I removed all the y-axis values so the player can only move along the x-axis left and right (Zack D.)
         dx = 0
-        dy = 0
+        # dy = 0
 
         if pyray.is_key_down(pyray.KEY_LEFT):
             dx = -1
@@ -35,13 +38,13 @@ class KeyboardService:
         if pyray.is_key_down(pyray.KEY_RIGHT):
             dx = 1
         
-        if pyray.is_key_down(pyray.KEY_UP):
-            dy = -1
+        # if pyray.is_key_down(pyray.KEY_UP):
+            # dy = -1
         
-        if pyray.is_key_down(pyray.KEY_DOWN):
-            dy = 1
+        # if pyray.is_key_down(pyray.KEY_DOWN):
+            # dy = 1
 
-        direction = Point(dx, dy)
+        direction = Point(dx, 0)
         direction = direction.scale(self._cell_size)
         
         return direction
