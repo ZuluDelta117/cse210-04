@@ -80,8 +80,8 @@ def main():
         cast.add_actor("artifacts", artifact)
         # We will also need to set a velocity so the artifacts move (Zack D.)
         
-                # # Assign a value to the rocks
-                if artifact.get_text() == "O":
+        # Assign a value to the rocks
+        if artifact.get_text() == "O":
             artifact.set_value(-1)
     
     # start the game
