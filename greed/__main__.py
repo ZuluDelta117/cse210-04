@@ -59,7 +59,7 @@ def main():
     # We will need to change things here to get the gems to move and make them look the way we want (Zack D.)
     for n in range(DEFAULT_ARTIFACTS):
         text = chr(random.randint(33, 126))
-        message = messages[n]
+        # message = messages[n]
 
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
@@ -76,8 +76,13 @@ def main():
         artifact.set_font_size(FONT_SIZE)
         artifact.set_color(color)
         artifact.set_position(position)
-        artifact.set_message(message)
+        # artifact.set_message(message)
         cast.add_actor("artifacts", artifact)
+        # We will also need to set a velocity so the artifacts move (Zack D.)
+        
+                # # Assign a value to the rocks
+                if artifact.get_text() == "O":
+            artifact.set_value(-1)
     
     # start the game
     keyboard_service = KeyboardService(CELL_SIZE)
